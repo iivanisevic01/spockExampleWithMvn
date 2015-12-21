@@ -1,0 +1,1 @@
+An example of using groovy Spock tests to test Java code, with Maven integration.
