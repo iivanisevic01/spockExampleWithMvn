@@ -9,7 +9,7 @@
     <artifactId>test</artifactId>
     <packaging>jar</packaging>
 
-    <name>Hello World</name>
+    <name>Spock Java testing example</name>
     <description>Java tested by Spock</description>
 
     <version>1.0</version>
@@ -88,6 +88,18 @@
     		<groupId>org.codehaus.groovy</groupId>
     		<artifactId>groovy-all</artifactId>
     		<version>2.4.3</version>
-  	</dependency>
+  		</dependency>
+		<dependency> <!-- enables mocking of classes (in addition to interfaces) -->
+			<groupId>cglib</groupId>
+			<artifactId>cglib-nodep</artifactId>
+			<version>3.1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency> <!-- enables mocking of classes without default constructor (together with CGLIB) -->
+			<groupId>org.objenesis</groupId>
+			<artifactId>objenesis</artifactId>
+			<version>2.1</version>
+			<scope>test</scope>
+		</dependency>
     </dependencies>
 </project>
